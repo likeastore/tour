@@ -143,6 +143,11 @@ body {
   animation-delay: 1s;
 }
 
+.delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
 .create-account-wrap {
   background: #fff;
   padding: 20px;
