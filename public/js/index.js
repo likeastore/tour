@@ -6,17 +6,20 @@ var ls = {
 
 	setDynamicHeights: function () {
 		var $window = $(window);
-		var $helloBlock = $('#hello');
-		var $wordsBlock = $helloBlock.find('.words-block');
+		var $block = $('.setter');
+		var $wordsBlock = $block.find('.words-block');
 
-		$helloBlock.css('height', $window.height());
+		$block.css('height', $window.height() + 2);
 
 		$window.scroll(function () {
-			$helloBlock.css('height', $window.height());
 			$wordsBlock.css({
 				'opacity': 1 - ($window.scrollTop() / 1000),
 				'-webkit-transform': 'translateY(' + $window.scrollTop() / 6 + 'px)'
 			});
+		});
+
+		$window.resize(function () {
+			$block.css('height', $window.height());
 		});
 	},
 
