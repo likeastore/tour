@@ -90,7 +90,8 @@ body {
 }
 
 .bg {
-	background-image: url('http://farm3.staticflickr.com/2813/11962078634_2f41d5e88e_b.jpg');
+	background-image: url('../img/tour-bg.jpg');
+	background-image: url('http://farm3.staticflickr.com/2813/11962078634_fab744ca6b_o.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 100%;
