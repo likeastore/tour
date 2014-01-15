@@ -2,6 +2,8 @@
 
 ### [Demo](http://tour.likeastore.com)
 
+![](http://farm8.staticflickr.com/7445/11962674086_8af8d8c688_b.jpg)
+
 ### Developing
 
 1. Clone this repository

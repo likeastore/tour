@@ -128,7 +128,9 @@ body {
 
 .scroll-down {
   display: block;
-  background: url('../img/scroll-hint.png') no-repeat center center;
+  background-image: url('../img/scroll-hint.png');
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: 42px;
   background-size: 42px;
   width: 42px;
@@ -136,6 +138,14 @@ body {
   margin: 20px auto;
   opacity: .5;
   cursor: pointer;
+  border-radius: 100%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.scroll-down:hover {
+  background-color: #df3f3f;
+  opacity: 1;
 }
 
 .delay-1s {
