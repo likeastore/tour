@@ -8,7 +8,9 @@ var ls = {
 		var $window = $(window);
 		var $block = $('.setter');
 		var $wordsBlock = $('.words-block');
+
 		var style = (document.body || document.documentElement).style;
+		var isDesktop = window.screenX !== 0 || !('ontouchstart' in window || 'onmsgesturechange' in window);
 		var animationSupport = (style.animation !== void 0) ||
 			(style.webkitAnimation !== void 0) ||
 			(style.WebkitAnimation !== void 0) ||
@@ -16,9 +18,10 @@ var ls = {
 			(style.MsAnimation !== void 0) ||
 			(style.OAnimation !== void 0);
 
+
 		$block.css('height', $window.height() + 2);
 
-		if (!animationSupport) {
+		if (!animationSupport || !isDesktop) {
 			$('.hidden').removeClass('hidden');
 		}
 
@@ -28,7 +31,7 @@ var ls = {
 				'-webkit-transform': 'translateY(' + $window.scrollTop() / 6 + 'px)'
 			});
 
-			if (animationSupport) {
+			if (animationSupport && isDesktop) {
 				if ($window.scrollTop() >= $('#account').offset().top) {
 					$('.networks-block').addClass('fadeInLeft visible');
 				}
