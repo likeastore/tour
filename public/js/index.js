@@ -8,8 +8,20 @@ var ls = {
 		var $window = $(window);
 		var $block = $('.setter');
 		var $wordsBlock = $('.words-block');
+		var style = (document.body || document.documentElement).style;
+		var animationSupport = (style.animation !== void 0) ||
+			(style.webkitAnimation !== void 0) ||
+			(style.WebkitAnimation !== void 0) ||
+			(style.MozAnimation !== void 0) ||
+			(style.MsAnimation !== void 0) ||
+			(style.OAnimation !== void 0);
 
 		$block.css('height', $window.height() + 2);
+
+		debugger;
+		if (!animationSupport) {
+			$('.hidden').removeClass('hidden');
+		}
 
 		$window.scroll(function () {
 			$wordsBlock.css({
@@ -17,25 +29,27 @@ var ls = {
 				'-webkit-transform': 'translateY(' + $window.scrollTop() / 6 + 'px)'
 			});
 
-			if ($window.scrollTop() >= $('#account').offset().top) {
-				$('.networks-block').addClass('fadeInLeft visible');
-			}
+			if (animationSupport) {
+				if ($window.scrollTop() >= $('#account').offset().top) {
+					$('.networks-block').addClass('fadeInLeft visible');
+				}
 
-			if ($window.scrollTop() >= $('#networks').offset().top) {
-				$('.favorites-block').addClass('fadeInRight visible');
-			}
+				if ($window.scrollTop() >= $('#networks').offset().top) {
+					$('.favorites-block').addClass('fadeInRight visible');
+				}
 
-			if ($window.scrollTop() >= $('#favorites').offset().top) {
-				$('.dashboard-block').addClass('fadeInLeft visible');
-			}
+				if ($window.scrollTop() >= $('#favorites').offset().top) {
+					$('.dashboard-block').addClass('fadeInLeft visible');
+				}
 
-			if ($window.scrollTop() >= $('#dashboard').offset().top) {
-				$('.search-block').addClass('fadeInRight visible');
-			}
+				if ($window.scrollTop() >= $('#dashboard').offset().top) {
+					$('.search-block').addClass('fadeInRight visible');
+				}
 
-			var $searchId = $('#search');
-			if ($window.scrollTop() >= $searchId.height() / 2 + $searchId.offset().top) {
-				$('.devices-overview-wrap').addClass('fadeInDown visible');
+				var $searchId = $('#search');
+				if ($window.scrollTop() >= $searchId.height() / 2 + $searchId.offset().top) {
+					$('.devices-overview-wrap').addClass('fadeInDown visible');
+				}
 			}
 		});
 

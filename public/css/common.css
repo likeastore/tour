@@ -120,7 +120,6 @@ h3 {
 
 .bg {
   background-image: url('../img/tour-bg.jpg');
-  background-image: url('http://farm3.staticflickr.com/2813/11962078634_fab744ca6b_o.jpg');
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -472,7 +471,7 @@ h3 {
 
 .footer-wrap ul {
   width: 340px;
-  margin: 30px auto;
+  margin: 35px auto 55px;
 }
 
 .footer-wrap li {
@@ -507,4 +506,23 @@ h3 {
   text-decoration: none;
   text-align: center;
   letter-spacing: 2px;
+}
+
+.copy {
+  font-size: 9px;
+  font-family: 'Montserrat', 'Source Sans Pro', 'Lato', 'Helvetica', 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: #ccc;
+  text-align: center;
+}
+
+.copy a {
+  color: #ccc;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.copy a:hover,
+.copy a:focus {
+  border: 0;
 }
