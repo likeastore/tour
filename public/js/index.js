@@ -7,7 +7,7 @@ var ls = {
 	setDynamicHeights: function () {
 		var $window = $(window);
 		var $block = $('.setter');
-		var $wordsBlock = $block.find('.words-block');
+		var $wordsBlock = $('.words-block');
 
 		$block.css('height', $window.height() + 2);
 
@@ -33,7 +33,8 @@ var ls = {
 				$('.search-block').addClass('fadeInRight visible');
 			}
 
-			if ($window.scrollTop() >= $('#search').offset().top) {
+			var $searchId = $('#search');
+			if ($window.scrollTop() >= $searchId.height() / 2 + $searchId.offset().top) {
 				$('.devices-overview-wrap').addClass('fadeInDown visible');
 			}
 		});
