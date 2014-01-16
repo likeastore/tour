@@ -18,7 +18,6 @@ var ls = {
 
 		$block.css('height', $window.height() + 2);
 
-		debugger;
 		if (!animationSupport) {
 			$('.hidden').removeClass('hidden');
 		}
