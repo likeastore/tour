@@ -131,4 +131,25 @@
 	.browser:hover img {
 		bottom: 70px;
 	}
+
+	.footer-wrap ul {
+		width: 100%;
+		padding: 0 15px;
+		text-align: center;
+	}
+
+	.footer-wrap ul li a {
+		font-size: 10px;
+	}
+}
+
+
+@media (max-width: 530px) {
+	.footer-wrap ul li a {
+		font-size: 9px;
+	}
+
+	.copy {
+		font-size: 8px;
+	}
 }

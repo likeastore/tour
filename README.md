@@ -2,7 +2,7 @@
 
 ### [Demo](http://tour.likeastore.com)
 
-![](http://farm8.staticflickr.com/7445/11962674086_8af8d8c688_b.jpg)
+[![](http://d13yacurqjgara.cloudfront.net/users/17725/screenshots/1382031/likeastore-tour-bottom.png)](http://dribbble.com/shots/1382031-tour)
 
 ### Developing
 
