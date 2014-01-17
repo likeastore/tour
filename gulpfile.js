@@ -16,11 +16,10 @@ gulp.task('server', ['default'], function () {
 gulp.task('watch', function () {
 	gulp.watch('./myth/*.css', function () {
 		gulp.run('styles');
-		gulp.run('build');
 	});
 });
 
-gulp.task('build', ['default'], function () {
+gulp.task('build', function () {
 	gulp.src('./public/css/style.css')
 		.pipe(minifyCss({
 			keepSpecialComments: 0,
@@ -31,4 +30,5 @@ gulp.task('build', ['default'], function () {
 
 gulp.task('default', function () {
 	gulp.run('styles');
+	gulp.run('build');
 });

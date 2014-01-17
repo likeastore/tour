@@ -194,7 +194,6 @@ h3 {
 }
 
 .point .block-text {
-  width: 400px;
   margin-top: 25px;
 }
 
@@ -286,8 +285,6 @@ h3 {
 
 .account-block .block-title {
   font-size: 22px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .account-block .block-text {
@@ -470,7 +467,7 @@ h3 {
 }
 
 .footer-wrap ul {
-  width: 340px;
+  width: 345px;
   margin: 35px auto 55px;
 }
 
