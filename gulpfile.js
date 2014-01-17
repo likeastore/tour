@@ -1,8 +1,11 @@
 var gulp = require('gulp');
 var myth = require('gulp-myth');
 var minifyCss = require('gulp-minify-css');
+var concatJs = require('gulp-concat');
+var rename = require('gulp-rename');
+var uglify = require('gulp-uglify');
 
-gulp.task('styles', function () {
+gulp.task('myth', function () {
 	gulp.src('./myth/*.css')
 		.pipe(myth())
 		.pipe(gulp.dest('./public/css'));
@@ -15,7 +18,7 @@ gulp.task('server', ['default'], function () {
 
 gulp.task('watch', function () {
 	gulp.watch('./myth/*.css', function () {
-		gulp.run('styles');
+		gulp.run('myth', 'build');
 	});
 });
 
@@ -26,9 +29,15 @@ gulp.task('build', function () {
 			relativeTo: __dirname + '/public/css'
 		}))
 		.pipe(gulp.dest('./public/build/'));
+
+	gulp.src('./public/js/*.js')
+		.pipe(concatJs('scripts.js'))
+		.pipe(gulp.dest('./public/build'))
+		.pipe(rename('scripts.min.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('./public/build'));
 });
 
 gulp.task('default', function () {
-	gulp.run('styles');
-	gulp.run('build');
+	gulp.run('myth', 'build');
 });
