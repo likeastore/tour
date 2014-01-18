@@ -1,155 +1,164 @@
 @media (max-width: 900px) {
-	.words {
-		font-size: 2.2em;
-		width: 700px;
-	}
+  .words {
+    font-size: 2.2em;
+    width: 700px;
+  }
 
-	.account-block .block-text {
-		width: 450px;
-	}
+  .account-block .block-text {
+    width: 450px;
+  }
 
-	.box {
-		width: 700px;
-	}
+  .box {
+    width: 700px;
+  }
 
-	.block-title {
-		font-size: 1.4em;
-	}
+  .block-title {
+    font-size: 1.4em;
+  }
 
-	.block-text {
-		font-size: 16px;
-	}
+  .block-text {
+    font-size: 16px;
+  }
 
-	.screenshot {
-		width: 280px;
-		height: auto;
-	}
+  .screenshot {
+    width: 280px;
+    height: auto;
+  }
 
-	.point {
-		height: 360px;
-	}
+  .point {
+    height: 360px;
+  }
 
-	.point.explore-networks-wrap {
-		height: 390px;
-	}
+  .point.explore-networks-wrap {
+    height: 390px;
+  }
 
-	.point.search-content-wrap {
-		height: 420px;
-	}
+  .point.search-content-wrap {
+    height: 420px;
+  }
 }
 
 @media (max-width: 700px) {
-	.words {
-		font-size: 1.8em;
-		width: 100%;
-	}
+  .words {
+    font-size: 1.8em;
+    width: 100%;
+  }
 
-	.words-desc {
-		font-size: 18px;
-	}
+  .words-desc {
+    font-size: 18px;
+  }
 
-	.create-account-wrap {
-		padding-top: 48px;
-		height: 300px;
-	}
+  .create-account-wrap {
+    padding-top: 48px;
+    height: 300px;
+  }
 
-	.get-started {
-		margin: 30px auto;
-	}
+  .get-started {
+    margin: 30px auto;
+  }
 
-	.box {
-		text-align: center;
-		width: 100%;
-		padding: 0px 15px;
-	}
+  .box {
+    text-align: center;
+    width: 100%;
+    padding: 0px 15px;
+  }
 
-	.box .left,
-	.box .right {
-		float: none;
-	}
+  .box .left,
+  .box .right {
+    float: none;
+  }
 
-	.box.words-block {
-		text-align: left;
-	}
+  .box.words-block {
+    text-align: left;
+  }
 
-	.point .block-info,
-	.point .block-text {
-		width: 100%;
-	}
+  .point .block-info,
+  .point .block-text {
+    width: 100%;
+  }
 
-	.account-block .block-text {
-		width: 100%;
-	}
+  .account-block .block-text {
+    width: 100%;
+  }
 
-	.block-info.right {
-		text-align: center;
-	}
+  .block-info.right {
+    text-align: center;
+  }
 
-	.screenshot {
-		margin: 40px auto;
-	}
+  .screenshot {
+    margin: 40px auto;
+  }
 
-	.point {
-		padding-top: 10px;
-		height: 500px;
-	}
+  .point {
+    padding-top: 10px;
+    height: 500px;
+  }
 
-	.point.explore-networks-wrap {
-		padding-top: 15px;
-		height: 480px;
-	}
+  .point.explore-networks-wrap {
+    padding-top: 15px;
+    height: 480px;
+  }
 
-	.point.search-content-wrap {
-		height: 530px;
-	}
+  .point.search-content-wrap {
+    height: 530px;
+  }
 
-	.devices-overview-wrap .block-title,
-	.devices-overview-wrap .block-text {
-		padding: 0 15px;
-	}
+  .devices-overview-wrap .block-title,
+  .devices-overview-wrap .block-text {
+    padding: 0 15px;
+  }
 
-	.devices-overview-wrap .block-title {
-		font-size: 2em;
-	}
+  .devices-overview-wrap .block-title {
+    font-size: 2em;
+  }
 
-	.devices-overview-wrap .block-text {
-		width: 100%;
-		font-size: 16px;
-	}
+  .devices-overview-wrap .block-text {
+    width: 100%;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 530px) {
-	.browser {
-		width: 360px;
-		height: 385px;
-	}
+  .browser {
+    width: 360px;
+    height: 385px;
+  }
 
-	.browser img {
-		bottom: -180px;
-	}
+  .browser img {
+    bottom: -180px;
+  }
 
-	.browser:hover img {
-		bottom: 70px;
-	}
+  .browser:hover img {
+    bottom: 70px;
+  }
 
-	.footer-wrap ul {
-		width: 100%;
-		padding: 0 15px;
-		text-align: center;
-	}
+  .footer-wrap ul {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+  }
 
-	.footer-wrap ul li a {
-		font-size: 10px;
-	}
+  .footer-wrap ul li a {
+    font-size: 10px;
+  }
 }
 
-
 @media (max-width: 530px) {
-	.footer-wrap ul li a {
-		font-size: 9px;
-	}
+  .footer-wrap ul li a {
+    font-size: 9px;
+  }
 
-	.copy {
-		font-size: 8px;
-	}
+  .copy {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 340px) {
+  .create-account-wrap {
+    height: 340px;
+  }
+
+  .point {
+    height: 520px;
+  }
 }
