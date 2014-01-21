@@ -2,6 +2,7 @@ var ls = {
 	init: function () {
 		this.setDynamicHeights();
 		this.initScrollParallax();
+		this.initAnalitics();
 	},
 
 	setDynamicHeights: function () {
@@ -74,6 +75,11 @@ var ls = {
 				$('body').addClass('stepper');
 			});
 		});
+	},
+
+	initAnalitics: function () {
+		debugger;
+		mixpanel.track('product tour opened');
 	}
 };
 
