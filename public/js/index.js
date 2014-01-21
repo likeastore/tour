@@ -78,7 +78,6 @@ var ls = {
 	},
 
 	initAnalitics: function () {
-		debugger;
 		mixpanel.track('product tour opened');
 	}
 };
