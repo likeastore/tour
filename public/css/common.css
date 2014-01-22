@@ -370,7 +370,8 @@ h3 {
 .start-use {
   display: block;
   color: #fff;
-  border: 1px solid #fff;
+  background: #57ad68;
+  border: 1px solid transparent;
   font-size: 16px;
   font-family: 'Montserrat', 'Source Sans Pro', 'Lato', 'Helvetica', 'Arial', sans-serif;
   line-height: 54px;
@@ -387,8 +388,8 @@ h3 {
 
 .start-use:hover,
 .start-use:focus {
-  background: #57ad68;
-  border-color: transparent;
+  background: transparent;
+  border-color: #fff;
 }
 
 .browser {
